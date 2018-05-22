@@ -1,0 +1,617 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'segoe ui', Arial, sans-serif;
+    background-color: #fcefc3;
+    background-image: url(../img/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#error {
+    width: 500px;
+    height: auto;
+    position: fixed;
+    left: 50%;
+    top: 300px;
+    margin: 0px 0px 0px -250px;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: -0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    z-index: 999;
+}
+
+#error #content {
+    width: auto;
+    height: auto;
+    max-height: 450px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+#error #content #close_button {
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+
+#error #content #space {
+    clear: both;
+}
+
+.space {
+    clear: both;
+}
+
+#menuHor {
+    height: auto;
+    background-color: #2e91e9;
+    margin-bottom: 1em;
+    background: rgba(91, 29, 16, 0.85);
+    background-image: url(../img/wood.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    box-shadow: -0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5);
+}
+
+#menuContainer {
+    width: 80em;
+    height: 2.5em;
+    margin: 0 auto 0 auto;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#logoContainer1 {
+    width: 58em;
+    height: auto;
+    margin: 0 auto 1em auto;
+    padding: 1em;
+    border: 1px solid #5b1d10;
+    border-radius: 0.5em;
+    box-shadow: -0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+#logo {
+    width: 25em;
+    height: 13.75em;
+    margin-right: 1em;
+    padding: 0;
+    float: left;
+    background: url(../img/sprite.jpg) no-repeat 0 0;
+}
+
+.container1 {
+    float: right;
+}
+
+#menuVertContainer2 {
+    width: 60em;
+    height: auto;
+    margin: 0 auto 1em auto;
+}
+
+#menuVert {
+    width: auto;
+    height: auto;
+    padding: 1em 1em 0 1em;
+    float: left;
+    border: 1px solid #5b1d10;
+    border-radius: 0.5em;
+    background: rgba(91, 29, 16, 0.85);
+    background-image: url(../img/wood2.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: auto 100%;
+    box-shadow: -0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5);
+}
+
+.menuVertUL {
+    list-style: none;
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+
+.menuVertLI {
+    margin-bottom: 0.25em;
+}
+
+.menuVertA {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.menuVertA:hover {
+    text-decoration: underline;
+}
+
+.menuVertH2 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.container2 {
+    float: right;
+    margin-top: 0;
+    box-shadow: -0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5);
+}
+
+#promosContainer {
+    width: 59em;
+    height: auto;
+    padding: 1em 0 1em 1em;
+    margin: 0 auto 1em auto;
+    border: 1px solid #5b1d10;
+    border-radius: 0.5em;
+    background: rgba(91, 29, 16, 0.85);
+    background-image: url(../img/wood.jpg);
+    background-repeat: repeat;
+    background-position: top center;
+    background-size: auto 100%;
+    box-shadow: -0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5);
+}
+
+.promo {
+    width: 18.66em;
+    height: auto;
+    margin: 0 1em 1em 0;
+    padding: 0;
+    float: left;
+}
+
+.promoA {
+    color: white;
+    text-decoration: none;
+}
+
+.promoA:hover {
+    text-decoration: underline;
+}
+
+.promoPhoto {
+    width: 18.66em;
+    height: 12.5em;
+    border-radius: 0.5em 0.5em 0 0;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+#promo1 {
+    background-image: url(../img/promo/1.jpg);
+}
+
+#promo2 {
+    background-image: url(../img/promo/2.jpg);
+}
+
+#promo3 {
+    background-image: url(../img/promo/3.jpg);
+}
+
+#promo4 {
+    background-image: url(../img/promo/4.jpg);
+}
+
+#promo5 {
+    background-image: url(../img/promo/5.jpg);
+}
+
+#promo6 {
+    background-image: url(../img/promo/6.jpg);
+}
+
+#promo7 {
+    background-image: url(../img/promo/7.jpg);
+}
+
+#promo8 {
+    background-image: url(../img/promo/8.jpg);
+}
+
+#promo9 {
+    background-image: url(../img/promo/9.jpg);
+}
+
+.promoText {
+    width: 17.66em; /*24*/
+    height: 16em;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+.promoH1 {
+    margin: 0 0 0.7em 0;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.promoH2 {
+    margin: 0 0 1em 0;
+    color: white;
+    font-size: 0.8em;
+}
+
+#promoH3 {
+    margin: 0;
+    color: white;
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+#footer {
+    width: 59em;
+    height: auto;
+    margin: 0 auto 1em auto;
+    padding: 2.5em 0 0 1em;
+    border: 1px solid #5b1d10;
+    border-radius: 0.5em;
+    background: rgba(91, 29, 16, 0.85);
+    background-image: url(../img/wood3.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    box-shadow: -0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5);
+}
+
+.footerColumn {
+    width: 18.66em;
+    height: auto;
+    margin-right: 1em;
+    float: left;
+    color: white;
+}
+
+.footerH2 {
+    font-size: 1em;
+    margin: 0 0 1em 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.footerP {
+    font-size: 0.8em;
+    margin: 0 0 1em 0;
+}
+
+.footerA {
+    color: white;
+    text-decoration: none;
+}
+
+.footerA:hover {
+    text-decoration: underline;
+}
+
+.footerSocial {
+    width: 29px;
+    height: 30px;
+    float: left;
+    margin: 0 0.25em 0.5em 0;
+}
+
+#footerTwitter {
+    background-image: url(../img/social_sprite.png);
+    background-repeat: no-repeat;
+    background-position: -1px -2px;
+}
+
+#footerFacebook {
+    background-image: url(../img/social_sprite.png);
+    background-repeat: no-repeat;
+    background-position: -37px -2px;
+}
+
+.footerH3 {
+    font-size: 1.7em;
+    margin: -0.25em 0 0 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    float: left;
+}
+
+#footerAuthor {
+    width: 58em;
+    height: auto;
+    margin-bottom: 1em;
+    text-align: center;
+    color: white;
+}
+
+#footerAAuthor {
+    color: white;
+    text-decoration: underline;
+}
+
+#footerAAuthor:hover {
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+#aboutContainer {
+    width: 58em;
+    height: auto;
+    margin: 0 auto 1em auto;
+    padding: 1em;
+    border: 1px solid #5b1d10;
+    border-radius: 0.5em;
+    background: rgba(91, 29, 16, 0.85);
+    background-image: url(../img/wood.jpg);
+    background-repeat: repeat;
+    background-position: bottom center;
+    background-size: auto 100%;
+    box-shadow: -0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5);
+    color: white;
+    -moz-column-count: 3; /* Firefox */
+    -webkit-column-count: 3; /* Safari and Chrome */
+    -o-column-count: 3; /* Opera */
+    column-count: 3;
+    -moz-column-gap: 2em; /* Firefox */
+    -webkit-column-gap: 2em; /* Safari and Chrome */
+    -o-column-gap: 2em; /* Opera */
+    column-gap: 2em;
+}
+
+#aboutH1 {
+    font-family: 'segoe script', Arial, sans-serif;
+    font-size: 2em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin: 0;
+    line-height: 1em;
+}
+
+.aboutP {
+    margin: 0.5em 0 0 0;
+    text-align: justify;
+}
+
+#contactContainer {
+    width: 58em;
+    height: auto;
+    margin: 0 auto 1em auto;
+    padding: 1em;
+    border: 1px solid #5b1d10;
+    border-radius: 0.5em;
+    background: rgba(91, 29, 16, 0.85);
+    background-image: url(../img/wood.jpg);
+    background-repeat: repeat;
+    background-position: bottom center;
+    background-size: auto 100%;
+    box-shadow: -0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5);
+    color: white;
+    -moz-column-count: 3; /* Firefox */
+    -webkit-column-count: 3; /* Safari and Chrome */
+    -o-column-count: 3; /* Opera */
+    column-count: 3;
+    -moz-column-gap: 2em; /* Firefox */
+    -webkit-column-gap: 2em; /* Safari and Chrome */
+    -o-column-gap: 2em; /* Opera */
+    column-gap: 2em;
+}
+
+#contactH1 {
+    font-family: 'segoe script', Arial, sans-serif;
+    font-size: 2em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin: 0;
+    line-height: 1em;
+}
+
+.contactP {
+    margin: 0 0 0.5em 0;
+    text-align: justify;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.contactH2 {
+    font-size: 1em;
+    margin: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.contactUL {
+    margin: 0 0 0.5em 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1em;
+}
+
+#contactForm {
+    width: 16em;
+    height: auto;
+    border: 1px solid #5b1d10;
+    border-radius: 0.5em;
+    background-color: white;
+    padding: 0.5em 1em 0.5em 0.5em;
+    margin: 0.5em 0 0 0;
+}
+
+#contactTitle {
+    margin: 0;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+.contactInput {
+    width: 100%;
+    margin-bottom: 0.5em;
+    font-family: 'segoe ui', Arial, sans-serif;
+    font-size: 0.75em;
+}
+
+#contactSubmit {
+    border: 1px solid #5b1d10;
+    border-radius: 0.5em;
+    background-color: white;
+    padding: 0.25em;
+}
+
+#contactSubmit:hover {
+    background: rgba(91, 29, 16, 0.85);
+    color: white;
+}
+
+#packContainer {
+    width: 60em;
+    height: auto;
+    margin: 0 auto 0 auto;
+}
+
+#packColumn1 {
+    width: 43em;
+    height: auto;
+    float: left;
+}
+
+.packInfo {
+    width: 40.9em;
+    height: auto;
+    margin: 0 0 1em 0;
+    padding: 1em;
+    border: 1px solid #5b1d10;
+    border-radius: 0.5em;
+    background: rgba(91, 29, 16, 0.85);
+    background-image: url(../img/wood.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+    box-shadow: -0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5);
+    color: white;
+    -moz-column-count: 2; /* Firefox */
+    -webkit-column-count: 2; /* Safari and Chrome */
+    -o-column-count: 2; /* Opera */
+    column-count: 2;
+    -moz-column-gap: 2em; /* Firefox */
+    -webkit-column-gap: 2em; /* Safari and Chrome */
+    -o-column-gap: 2em; /* Opera */
+    column-gap: 2em;
+}
+
+#packH1 {
+    font-family: 'segoe script', Arial, sans-serif;
+    font-size: 2em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin: 0;
+    line-height: 1em;
+}
+
+.packP {
+    margin: 1em 0 0 0;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.packH2 {
+    font-size: 1em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin: 0;
+}
+
+.packOL {
+    margin: 0;
+    padding: 0 1.2em;
+    text-align: justify;
+}
+
+.packLITitle {
+    color: #D1D1D1;
+    font-weight: bold;
+}
+
+.packAlert {
+    width: 40.9em;
+    height: auto;
+    margin: 0 0 1em 0;
+    padding: 1em;
+    border: 1px solid #5b1d10;
+    border-radius: 0.5em;
+    background-color: white;
+    background-image: url(../img/alert.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto 100%;
+    box-shadow: -0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5);
+    color: black;
+    -moz-column-count: 2; /* Firefox */
+    -webkit-column-count: 2; /* Safari and Chrome */
+    -o-column-count: 2; /* Opera */
+    column-count: 2;
+    -moz-column-gap: 2em; /* Firefox */
+    -webkit-column-gap: 2em; /* Safari and Chrome */
+    -o-column-gap: 2em; /* Opera */
+    column-gap: 2em;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-weight: bold;
+}
+
+.packUL {
+    margin: 0;
+    padding: 0 1em;
+}
+
+.packageAUL {
+    text-decoration: none;
+    color: white;
+}
+
+.packageAUL:hover {
+    text-decoration: underline;
+}
+
+#packColumn2 {
+    width: 16em;
+    height: auto;
+    float: right;
+}
+
+#packForm {
+    width: 14.4em;
+    height: auto;
+    border: 1px solid #5b1d10;
+    border-radius: 0.5em;
+    background-color: white;
+    padding: 0.5em 1em 0.5em 0.5em;
+    margin-bottom: 1em;
+    box-shadow: -0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5);
+}
+
+.packH3 {
+    margin: 0;
+    padding: 0;
+}
+
+#packPhotos {
+    width: 16em;
+    height: auto;
+}
+
+.packPhoto {
+    width: 6.5em;
+    height: 6.5em;
+    float: left;
+    margin: 0 0.5em 1em 0.5em;
+    border: 1px solid #5b1d10;
+    border-radius: 0.5em;
+    box-shadow: -0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5);
+}
+
